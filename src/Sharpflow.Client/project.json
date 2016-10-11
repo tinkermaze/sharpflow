@@ -1,0 +1,87 @@
+﻿{
+  "title": "Sharpflow.Client",
+  "version": "0.1.0-*",
+  "description": "Sharpflow .NET client library",
+  "copyright": "Copyright (c) 2016 tinkermaze",
+  "authors": [
+    "tinkermaze"
+  ],
+
+  "packOptions": {
+    "summary": "C# library template with support for .NET 3.5, 4.5 and Core",
+    "licenseUrl": "https://raw.githubusercontent.com/tinkermaze/sharpflow/master/LICENSE",
+    "requireLicenseAcceptance": false,
+    "tags": [
+      "Sharpflow",
+      "C# library"
+    ],
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/tinkermaze/sharpflow"
+    }
+  },
+
+  "configurations": {
+    "Release": {
+      "buildOptions": {
+        "warningsAsErrors": true
+      }
+    }
+  },
+
+  "frameworks": {
+
+    "netstandard1.6": {
+      "dependencies": {
+        "NETStandard.Library": "1.6.0",
+        "Newtonsoft.Json": "9.0.1"
+      }
+    },
+
+    "net45": {
+      "frameworkAssemblies": {
+        "System": {
+          "type": "build"
+        },
+        "System.Core": {
+          "type": "build"
+        },
+        "System.Data": {
+          "type": "build"
+        },
+        "System.Net.Http": {
+          "type": "build"
+        },
+        "System.Web": {
+          "type": "build"
+        }
+      },
+      "dependencies": {
+        "Newtonsoft.Json": "9.0.1"
+      }
+    },
+
+    "net35": {
+      "buildOptions": {
+        "debugType": "portable",
+        "define": [
+          "NET35"
+        ]
+      },
+      "frameworkAssemblies": {
+        "System": {
+          "type": "build"
+        },
+        "System.Data": {
+          "type": "build"
+        },
+        "System.Web": {
+          "type": "build"
+        }
+      },
+      "dependencies": {
+        "Newtonsoft.Json": "9.0.1"
+      }
+    }
+  }
+}
