@@ -10,7 +10,7 @@ namespace Sharpflow.Client
 {
     public class SimpleHttpClient
     {
-        public const string TimeApiEndpoint = "http://www.timeapi.org/utc/now.json";
+        public const string TimeApiEndpoint = "http://chronic.herokuapp.com/utc/now.json";
 
 #if NET35
         private readonly WebClient client = new WebClient();
