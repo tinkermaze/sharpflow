@@ -7,6 +7,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{D4B6422C-0D6
 EndProject
 Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Sharpflow.Client", "src\Sharpflow.Client\Sharpflow.Client.xproj", "{BFF1136D-0653-4DB4-A248-364008BDD691}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{F47C531B-2656-4B20-984D-0D66A1E60DBE}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Sharpflow.Client.Tests", "test\Sharpflow.Client.Tests\Sharpflow.Client.Tests.xproj", "{691765F8-6C0B-4BCE-8CFE-C006582FC53A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,11 +21,16 @@ Global
 		{BFF1136D-0653-4DB4-A248-364008BDD691}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BFF1136D-0653-4DB4-A248-364008BDD691}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BFF1136D-0653-4DB4-A248-364008BDD691}.Release|Any CPU.Build.0 = Release|Any CPU
+		{691765F8-6C0B-4BCE-8CFE-C006582FC53A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{691765F8-6C0B-4BCE-8CFE-C006582FC53A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{691765F8-6C0B-4BCE-8CFE-C006582FC53A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{691765F8-6C0B-4BCE-8CFE-C006582FC53A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{BFF1136D-0653-4DB4-A248-364008BDD691} = {D4B6422C-0D6C-4C20-9512-A715A52D16FD}
+		{691765F8-6C0B-4BCE-8CFE-C006582FC53A} = {F47C531B-2656-4B20-984D-0D66A1E60DBE}
 	EndGlobalSection
 EndGlobal
