@@ -110,14 +110,13 @@ if (!(Test-Path $toolsPath))
 }
 
 # project.json defines packages used in build process
-Write-Verbose -Message "Copying project.json from $toolsProjectJsonSource"
 Copy-Item $toolsProjectJsonSource $toolsProjectJson -ErrorAction Stop
 
-Write-Host "Preparing Cake and build tools"
+Write-Host "Restoring build tools (into $toolsPath)"
 Invoke-Expression "& dotnet restore `"$toolsPath`" --packages `"$toolsPath`" -f `"$cakeFeed`"" | Out-Null;
 if ($LastExitCode -ne 0)
 {
-    throw "Error occured while preparing Cake"
+    throw "Error occured while restoring build tools"
 }
 
 $cakeExe = (Get-ChildItem (Join-Path $toolsPath "Cake.CoreCLR/*/Cake.dll") -ErrorAction Stop).FullName | `
@@ -136,3 +135,4 @@ if (!(Test-Path $NugetPath)) {
 ###########################################################################
 # Run build script
 ###########################################################################
+
